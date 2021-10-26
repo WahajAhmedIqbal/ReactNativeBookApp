@@ -20,7 +20,6 @@ const BooksCards = ({ navigation }) => {
                             source={require('../assets/16.jpg')} />
                     </View>
                 </TouchableOpacity>
-
                 <TouchableOpacity title='' onPress={() => navigation.navigate('BooksInnerPage')}>
 
                     <View style={styles.imgCard}>
