@@ -1,47 +1,67 @@
 import React from 'react'
-import { Alert, Button, Image, ScrollView, StyleSheet, View } from 'react-native'
+import { Alert, Button, Image, ScrollView, StyleSheet, TouchableOpacity, View } from 'react-native'
 const BooksCards = ({ navigation }) => {
     return (
         <ScrollView>
             <View style={styles.conatienr}>
-                <Button title='' onPress={() => navigation.navigate('BooksInnerPage')}>
+                <TouchableOpacity title='' onPress={() => navigation.navigate('BooksInnerPage')}>
                     <View style={styles.imgCard}>
                         <Image
                             onPress={() => Alert.alert('test')}
                             style={styles.imgImage}
                             source={require('../assets/15.jpg')} />
                     </View>
-                </Button>
-                <View style={styles.imgCard} onAccessibilityTap={() => navigation.navigate('BooksInnerPage')}>
-                    <Image
-                        style={styles.imgImage}
-                        source={require('../assets/16.jpg')} />
-                </View>
-                <View style={styles.imgCard}>
-                    <Image
-                        style={styles.imgImage}
-                        source={require('../assets/summer-bird-blue-9781481487757_hr-678x1024.jpg')} />
-                </View>
-                <View style={styles.imgCard}>
-                    <Image
-                        style={styles.imgImage}
-                        source={require('../assets/12.jpg')} />
-                </View>
-                <View style={styles.imgCard}>
-                    <Image
-                        style={styles.imgImage}
-                        source={require('../assets/summer-bird-blue-9781481487757_hr-678x1024.jpg')} />
-                </View>
-                <View style={styles.imgCard}>
-                    <Image
-                        style={styles.imgImage}
-                        source={require('../assets/15.jpg')} />
-                </View>
-                <View style={styles.imgCard}>
-                    <Image
-                        style={styles.imgImage}
-                        source={require('../assets/16.jpg')} />
-                </View>
+                </TouchableOpacity>
+                <TouchableOpacity title='' onPress={() => navigation.navigate('BooksInnerPage')}>
+
+                    <View style={styles.imgCard} >
+                        <Image
+                            style={styles.imgImage}
+                            source={require('../assets/16.jpg')} />
+                    </View>
+                </TouchableOpacity>
+
+                <TouchableOpacity title='' onPress={() => navigation.navigate('BooksInnerPage')}>
+
+                    <View style={styles.imgCard}>
+                        <Image
+                            style={styles.imgImage}
+                            source={require('../assets/summer-bird-blue-9781481487757_hr-678x1024.jpg')} />
+                    </View>
+
+                </TouchableOpacity>
+                <TouchableOpacity title='' onPress={() => navigation.navigate('BooksInnerPage')}>
+
+                    <View style={styles.imgCard}>
+                        <Image
+                            style={styles.imgImage}
+                            source={require('../assets/12.jpg')} />
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity title='' onPress={() => navigation.navigate('BooksInnerPage')}>
+
+                    <View style={styles.imgCard}>
+                        <Image
+                            style={styles.imgImage}
+                            source={require('../assets/summer-bird-blue-9781481487757_hr-678x1024.jpg')} />
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity title='' onPress={() => navigation.navigate('BooksInnerPage')}>
+
+                    <View style={styles.imgCard}>
+                        <Image
+                            style={styles.imgImage}
+                            source={require('../assets/15.jpg')} />
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity title='' onPress={() => navigation.navigate('BooksInnerPage')}>
+
+                    <View style={styles.imgCard}>
+                        <Image
+                            style={styles.imgImage}
+                            source={require('../assets/16.jpg')} />
+                    </View>
+                </TouchableOpacity>
             </View>
         </ScrollView>
     )
